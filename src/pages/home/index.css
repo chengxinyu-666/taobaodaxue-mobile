@@ -1,0 +1,25 @@
+.home .home_content {
+  margin-top: 0.28rem;
+  text-align: center;
+  font-size: 0.23rem;
+  color: #000;
+}
+.home .chose_list {
+  margin-top: 0.24rem;
+}
+.home .chose_list ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f6f6f6;
+}
+.home .chose_list ul li {
+  line-height: 0.89rem;
+  font-size: 0.24rem;
+  display: inline-block;
+  width: 25%;
+}
+.home .chose_list ul .act {
+  color: white;
+  background-color: #ff4f03;
+}
