@@ -1,3 +1,9 @@
+<!--
+ * @Author: chengxinyu
+ * @Date: 2021-12-18 13:43:11
+ * @LastEditors: chengxinyu
+ * @LastEditTime: 2021-12-19 21:10:54
+-->
 # 淘宝大学mobile
 
 #### 介绍
@@ -15,8 +21,8 @@
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
+1.  下拉框组件 npm install --save react-pullload
+2.  轮播组件  react-awesome-swiper
 3.  xxxx
 
 #### 参与贡献
