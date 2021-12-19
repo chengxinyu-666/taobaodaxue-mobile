@@ -2,7 +2,7 @@
  * @Author: chengxinyu
  * @Date: 2021-12-18 16:34:06
  * @LastEditors: chengxinyu
- * @LastEditTime: 2021-12-19 21:08:03
+ * @LastEditTime: 2021-12-19 21:41:38
  */
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
@@ -28,15 +28,13 @@ export default function (props) {
   const [action, setAction] = useState(STATS.init);
   const [data, setDate] = useState({
     //默认搜索条件
-    pageSize: 4,
+    pageSize: 24,
     pageNo: 1,
     tags: [],
     username: '',
   });
 
   useEffect(() => {
-    let newarr = data.tags;
-    console.log(7777, newarr);
     let url =
       'https://www.fastmock.site/mock/fe1e37e0a331bc6177530e288327c374/api/api/testInterface';
     axios
