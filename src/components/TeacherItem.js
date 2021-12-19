@@ -2,7 +2,7 @@
  * @Author: chengxinyu
  * @Date: 2021-12-18 14:12:02
  * @LastEditors: chengxinyu
- * @LastEditTime: 2021-12-19 11:27:05
+ * @LastEditTime: 2021-12-19 18:28:25
  */
 import React, { useState, useEffect } from 'react';
 import './index.less';
@@ -30,13 +30,14 @@ export default function (props) {
         </div>
         <div className="show_tips">
           {tags.includes('新手') ? <span className="col1">新手</span> : ''}
-          {tags.includes('产品') ? (
-            <>
-              {' '}
-              <span className="col2">店铺运营</span>
-              <span className="col3">服饰服装</span>
-              <span className="col4">数据运营</span>
-            </>
+          {tags.includes('产品') ? <span className="col2">店铺运营</span> : ''}
+          {tags.includes('服饰服装') ? (
+            <span className="col3">服饰服装</span>
+          ) : (
+            ''
+          )}
+          {tags.includes('数据运营') ? (
+            <span className="col4">数据运营</span>
           ) : (
             ''
           )}
