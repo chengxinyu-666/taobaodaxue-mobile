@@ -1,5 +1,5 @@
 .home {
-  .home_content {
+  .cutTime {
     margin-top: 0.28rem;
     text-align: center;
     font-size: 0.23rem;
@@ -17,10 +17,92 @@
         font-size: 0.24rem;
         display: inline-block;
         width: 25%;
+        text-align: center;
       }
       .act {
         color: white;
         background-color: #ff4f03;
+      }
+    }
+  }
+}
+
+.rzjs {
+  .rzjs_search {
+    width: 7.02rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.35rem auto;
+    .inner_search {
+      padding: 0;
+      width: 5.88rem;
+      .inner_search_bor {
+        border: 0.03rem solid #ff7235;
+        border-radius: 0.35rem;
+        position: relative;
+        .lef {
+          display: flex;
+          align-items: center;
+          padding-left: 0.15rem;
+          span {
+            font-size: 0.38rem;
+            color: #c1c1c1;
+          }
+          input {
+            line-height: 0.69rem;
+            font-size: 0.26rem;
+            padding-left: 0.1rem;
+          }
+        }
+        .rig {
+          position: absolute;
+          right: -0.02rem;
+          top: -0.02rem;
+          width: 1.58rem;
+          border-radius: 0.35rem;
+          overflow: hidden;
+          height: 0.72rem;
+          .search_btn {
+            width: 1.58rem;
+            display: inline-block;
+            font-size: 0.26rem;
+            color: white;
+            background-color: #ff872f;
+            line-height: 0.72rem;
+            height: 0.72rem;
+            text-align: center;
+          }
+        }
+        .rig2 {
+          position: absolute;
+          top: 0.16rem;
+          right: 0.2rem;
+          div {
+            border: 2px solid #c1c1c1;
+            width: 0.34rem;
+            height: 0.34rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+              color: #c1c1c1;
+              font-size: 0.15px;
+              line-height: 0.34rem;
+            }
+          }
+        }
+      }
+    }
+    .choose {
+      .inner_choose {
+        span {
+          font-size: 0.28rem;
+          display: inline-block;
+          color: #757575;
+          font-weight: 600;
+        }
       }
     }
   }

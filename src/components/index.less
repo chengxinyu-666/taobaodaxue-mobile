@@ -1,99 +1,3 @@
-/*样式重置 reset */
-* {
-  margin: 0;
-  padding: 0;
-}
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-dl,
-dd,
-ul,
-ol,
-input {
-  margin: 0; /*去掉自带外间距*/
-  padding: 0; /*去掉自带内填充*/
-}
-em,
-i {
-  font-style: normal; /*斜体扶正*/
-}
-li {
-  list-style: none; /*去掉默认列表符*/
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-b,
-strong,
-th {
-  font-weight: normal; /*去掉标题自带加粗*/
-}
-a {
-  outline: none; /*去掉描边*/
-  text-decoration: none; /*去掉自带下划线*/
-}
-img {
-  border: none; /*去掉ie浏览器图片外面的边框*/
-  vertical-align: top; /*图片对齐方式*/
-}
-table {
-  border-collapse: collapse; /*去掉表格自带间隙*/
-  border-spacing: 0;
-}
-th,
-td {
-  text-align: left;
-  vertical-align: top;
-}
-input {
-  outline: none;
-  border: none;
-  background-color: transparent; /*背景色透明*/
-  font-family: inherit;
-}
-textarea {
-  outline: none;
-  resize: none; /*禁止调整文本域尺寸*/
-  overflow: auto; /*在浏览器默认状态下没有滚动条*/
-}
-body {
-  font-family: Arial, '微软雅黑', Helvetica, sans-serif;
-  font-size: 12px;
-  line-height: 1;
-  -webkit-text-size-adjust: 100% !important; /*禁止IOS调整字体大小*/
-}
-a,
-button,
-input,
-select,
-textarea {
-  -webkit-tap-highlight-color: rgba(
-    0,
-    0,
-    0,
-    0
-  ); /*去掉a、input和button点击时的蓝色外边框和灰色半透明背景*/
-}
-
-/*public style*/
-.clearfix {
-  zoom: 1; /*IE浏览器清浮动*/
-}
-.clearfix:after {
-  content: ''; /*添加一个空内容*/
-  display: block; /*转块*/
-  clear: both; /*清浮动*/
-}
-
 .headerInfo {
   .banner {
     .swiper-wrapper {
@@ -139,5 +43,98 @@ textarea {
         text-indent: 2em;
       }
     }
+  }
+}
+
+.teacherItem {
+  width: 7.02rem;
+  margin: 0.36rem auto 0;
+  box-shadow: #eaf6ff 0 0 0.1rem 0.05rem; //边框阴影
+  box-sizing: border-box;
+  padding: 0.2rem 0.25rem 0.25rem;
+  border-radius: 0.05rem;
+  .box {
+    .box_top {
+      display: flex;
+      .pic {
+        img {
+          width: 1.45rem;
+          height: 1.45rem;
+          border-radius: 50%;
+        }
+      }
+      .name {
+        padding-left: 0.2rem;
+        padding-top: 0.45rem;
+        .p_name {
+          font-size: 0.25rem;
+          font-weight: 800;
+          color: #5c5c5c;
+        }
+        .p_info {
+          font-size: 0.22rem;
+          font-weight: 600;
+          color: #757575;
+        }
+      }
+    }
+    .box_info {
+      margin-top: 0.15rem;
+      p {
+        font-size: 0.24rem;
+        line-height: 0.32rem;
+        color: #757575;
+        font-weight: 600;
+        font-family: 'Adobe黑体Std';
+        word-break: break-all;
+        white-space: inherit;
+      }
+    }
+    .show_tips {
+      padding-top: 0.16rem;
+      span {
+        display: inline-block;
+        font-size: 0.23rem;
+        line-height: 0.44rem;
+        padding: 0 0.15rem;
+        margin-right: 0.26rem;
+        border-radius: 0.22rem;
+      }
+      .col1 {
+        color: #ff8f02;
+        background-color: #fff4e5;
+      }
+      .col2 {
+        color: #00ccc3;
+        background-color: #e5faf9;
+      }
+      .col3 {
+        background-color: #e5f4ff;
+        color: #0393ff;
+      }
+      .col4 {
+        background-color: #fff4e5;
+        color: #ff8f02;
+      }
+    }
+  }
+}
+
+.more {
+  p {
+    text-align: center;
+    font-size: 0.22rem;
+    color: red;
+  }
+}
+.loading {
+  text-align: center;
+  p {
+    font-size: 0.22rem;
+    color: red;
+  }
+  img {
+    width: 2rem;
+    margin-top: 0.3rem;
   }
 }
