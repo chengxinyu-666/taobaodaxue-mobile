@@ -3,7 +3,7 @@
  * @Author: chengxinyu
  * @Date: 2021-12-19 14:56:11
  * @LastEditors: chengxinyu
- * @LastEditTime: 2021-12-20 18:04:09
+ * @LastEditTime: 2021-12-20 18:09:19
  */
 import React, { useEffect } from 'react';
 
@@ -12,6 +12,7 @@ function Choose(props) {
   // eslint-disable-next-line no-unused-vars
   const { setIschose, setDate, choseTags, data, ischose } = props;
   console.log(77, setIschose, choseTags, data);
+
   useEffect(() => {}, []);
 
   const addItem = (item) => {
