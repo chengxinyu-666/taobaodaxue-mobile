@@ -2,7 +2,7 @@
  * @Author: chengxinyu
  * @Date: 2021-12-18 16:34:06
  * @LastEditors: chengxinyu
- * @LastEditTime: 2021-12-20 15:59:30
+ * @LastEditTime: 2021-12-20 16:56:30
  */
 import React, { useState, useEffect } from 'react';
 // import ReactDOM from 'react-dom';
@@ -115,6 +115,7 @@ function DistinguishedLecturer() {
       {ischose ? (
         <ModalContainer>
           <Choose
+            ischose={ischose}
             setIschose={setIschose}
             setDate={setDate}
             choseTags={choseTags}

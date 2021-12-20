@@ -1,3 +1,7 @@
+.shows2 {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 1s;
+}
 .chooseqq {
   position: fixed;
   width: 7.5rem;
@@ -5,14 +9,26 @@
   top: 0;
   right: 0;
   z-index: 999;
-  background-color: rgba(0, 0, 0, 0.253);
+  transition: 1s;
+}
+.chooseqq .leftwhitesl {
+  width: 3.34rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow: scroll;
+  transition: 1s;
 }
 .chooseqq .innch {
+  z-index: 99;
+  transition: 1s;
   width: 4.16rem;
   background-color: white;
   height: 100vh;
   position: relative;
-  left: 3.34rem;
+  overflow: scroll;
+  left: 10.84rem;
   top: 0;
   box-sizing: border-box;
   padding: 0.73rem 0.4rem;
@@ -80,6 +96,11 @@
   background-color: #ff4f03;
   border-bottom-right-radius: 0.44rem;
   border-top-right-radius: 0.44rem;
+}
+.chooseqq .shows {
+  left: 3.34rem !important;
+  overflow: scroll;
+  transition: 1s;
 }
 .headerInfo .banner .swiper-wrapper .swiper-slide img {
   width: 7.5rem;

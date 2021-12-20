@@ -3,13 +3,14 @@
  * @Author: chengxinyu
  * @Date: 2021-12-19 14:56:11
  * @LastEditors: chengxinyu
- * @LastEditTime: 2021-12-20 16:03:15
+ * @LastEditTime: 2021-12-20 18:04:09
  */
 import React, { useEffect } from 'react';
 
 function Choose(props) {
   // const [itemarr, setItemarr] = useState([]);
-  const { setIschose, setDate, choseTags, data } = props;
+  // eslint-disable-next-line no-unused-vars
+  const { setIschose, setDate, choseTags, data, ischose } = props;
   console.log(77, setIschose, choseTags, data);
   useEffect(() => {}, []);
 
@@ -48,10 +49,20 @@ function Choose(props) {
     setIschose(false);
   };
 
+  useEffect(() => {
+    if (!ischose) {
+      document.getElementById('shows').setAttribute('class', 'innch shows');
+      document
+        .getElementById('shows2')
+        .setAttribute('class', 'chooseqq shows2');
+    }
+  }, []);
   return (
-    <div className="chooseqq">
-      <div className="innch">
+    <div id="shows2" className="chooseqq">
+      <div className="leftwhitesl" onClick={() => setIschose(false)}></div>
+      <div id="shows" className="innch">
         <div className="chose_box">
+          {/* <div  className={ischose?'chose_box  ':'chose_box div3s'} > */}
           <div className="chose_top">
             <h3>擅长方向</h3>
             <div className="goodat">
@@ -74,6 +85,7 @@ function Choose(props) {
           </div>
         </div>
         <div className="chose_bon">
+          {/* <div  className={ischose?'chose_bon  ':'chose_bon div3s'} > */}
           <div className="res_box">
             <span className="res" onClick={onReset}>
               重置
