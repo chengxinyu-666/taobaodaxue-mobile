@@ -2,12 +2,12 @@
  * @Author: chengxinyu
  * @Date: 2021-12-18 16:34:25
  * @LastEditors: chengxinyu
- * @LastEditTime: 2021-12-19 07:10:52
+ * @LastEditTime: 2021-12-20 15:26:43
  */
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
-export default function (props) {
-  const [state, setState] = useState();
+function lecturerStyle() {
+  // const [state, setState] = useState();
 
   useEffect(() => {}, []);
 
@@ -18,3 +18,5 @@ export default function (props) {
     </div>
   );
 }
+
+export default lecturerStyle;

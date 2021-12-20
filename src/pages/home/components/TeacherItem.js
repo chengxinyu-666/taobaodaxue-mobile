@@ -1,14 +1,17 @@
+/* eslint-disable react/prop-types */
 /*
  * @Author: chengxinyu
  * @Date: 2021-12-18 14:12:02
  * @LastEditors: chengxinyu
- * @LastEditTime: 2021-12-19 18:28:25
+ * @LastEditTime: 2021-12-20 15:56:08
  */
 import React, { useState, useEffect } from 'react';
 import './index.less';
 
-export default function (props) {
+function TeacherItem(props) {
+  // eslint-disable-next-line no-unused-vars
   const [state, setState] = useState();
+  // eslint-disable-next-line react/prop-types
   const { img, username, position, introduce, tags } = props.teacherData;
 
   useEffect(() => {}, []);
@@ -46,3 +49,4 @@ export default function (props) {
     </div>
   );
 }
+export default TeacherItem;

@@ -2,12 +2,12 @@
  * @Author: chengxinyu
  * @Date: 2021-12-19 08:38:55
  * @LastEditors: chengxinyu
- * @LastEditTime: 2021-12-19 08:48:27
+ * @LastEditTime: 2021-12-20 15:54:16
  */
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './index.less';
-export default function (props) {
-  const [state, setState] = useState();
+function Loading() {
+  // const [state, setState] = useState();
 
   useEffect(() => {}, []);
 
@@ -18,3 +18,4 @@ export default function (props) {
     </div>
   );
 }
+export default Loading;

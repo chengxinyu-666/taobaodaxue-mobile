@@ -2,21 +2,22 @@
  * @Author: chengxinyu
  * @Date: 2021-12-18 14:33:26
  * @LastEditors: chengxinyu
- * @LastEditTime: 2021-12-18 17:57:37
+ * @LastEditTime: 2021-12-20 16:10:51
  */
 
 import React, { useState, useEffect } from 'react';
 //  import { Swiper, Toast } from 'antd-mobile'
 import AwesomeSwiper from 'react-awesome-swiper';
 import './index.less';
-export default function (props) {
-  const [state, setState] = useState();
+function HeaderInfo() {
+  // const [state, setState] = useState();
   const bannerList = [
-    '../assets/img/banner.jpg',
-    '../assets/img/banner.jpg',
-    '../assets/img/banner.jpg',
+    // '@/assets/img/banner.jpg',
+    // '@/assets/img/banner.jpg',
+    // '@/assets/img/banner.jpg',
+    1, 2, 3,
   ];
-  const [config, setConfig] = useState({
+  const [config] = useState({
     loop: true,
     autoplay: {
       delay: 1500,
@@ -36,7 +37,7 @@ export default function (props) {
         <div className="swiper-wrapper">
           {bannerList.map((item, idx) => (
             <div className="swiper-slide" key={idx}>
-              <img src={require('../assets/img/banner.jpg')} />
+              <img src={require('../../../assets/img/banner.jpg')} />
             </div>
           ))}
         </div>
@@ -59,3 +60,4 @@ export default function (props) {
     </div>
   );
 }
+export default HeaderInfo;

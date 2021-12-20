@@ -1,13 +1,14 @@
+/* eslint-disable react/prop-types */
 /*
  * @Author: chengxinyu
  * @Date: 2021-12-19 14:56:11
  * @LastEditors: chengxinyu
- * @LastEditTime: 2021-12-19 21:03:51
+ * @LastEditTime: 2021-12-20 16:03:15
  */
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
-export default function (props) {
-  const [itemarr, setItemarr] = useState([]);
+function Choose(props) {
+  // const [itemarr, setItemarr] = useState([]);
   const { setIschose, setDate, choseTags, data } = props;
   console.log(77, setIschose, choseTags, data);
   useEffect(() => {}, []);
@@ -65,7 +66,7 @@ export default function (props) {
                     key={idx}
                   >
                     <span onClick={addItem.bind(this, item)}>{item}</span>
-                    <img src={require('../assets/img/sho.png')} />
+                    <img src={require('@/assets/img/sho.png')} />
                   </div>
                 );
               })}
@@ -86,3 +87,4 @@ export default function (props) {
     </div>
   );
 }
+export default Choose;

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /*
  * @Author: chengxinyu
  * @Date: 2021-12-19 08:39:29
@@ -10,7 +11,8 @@ import React, { useState, useEffect } from 'react';
 
 import './index.less';
 
-export default function ShowLoading(props) {
+function ShowLoading(props) {
+  // eslint-disable-next-line no-unused-vars
   const [state, setState] = useState();
 
   useEffect(() => {}, []);
@@ -30,10 +32,4 @@ export default function ShowLoading(props) {
   );
 }
 
-// ShowLoading.defaultProps = {
-//   showLoading: true,
-// };
-
-// ShowLoading.propTypes = {
-//   showLoading: PropTypes.bool
-// };
+export default ShowLoading;

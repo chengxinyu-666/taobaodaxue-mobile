@@ -2,18 +2,18 @@
  * @Author: chengxinyu
  * @Date: 2021-12-18 14:11:21
  * @LastEditors: chengxinyu
- * @LastEditTime: 2021-12-19 22:25:16
+ * @LastEditTime: 2021-12-20 15:58:01
  */
 import React, { useState, useEffect } from 'react';
 import './index.less';
-import HeaderInfo from '@/components/HeaderInfo';
-import Hzjs from './components/hzjs';
-import Jsfx from './components/jsfx';
-import Rzjs from './components/rzjs';
-import Tpjs from './components/tpjs';
+import HeaderInfo from './components/HeaderInfo';
+import CooperativeLecturer from './components/CooperativeLecturer';
+import LecturerStyle from './components/lecturerStyle';
+import CertifiedLecturer from './components/CertifiedLecturer';
+import DistinguishedLecturer from './components/DistinguishedLecturer';
 import moment from 'moment';
-export default function (props) {
-  const [state, setState] = useState();
+function Home() {
+  // const [state, setState] = useState();
   const [active, setActive] = useState(0);
   const teacherList = ['认证讲师', '特聘讲师', '合作讲师', '讲师分彩'];
 
@@ -81,13 +81,13 @@ export default function (props) {
           </ul>
         </div>
         {active == 0 ? (
-          <Rzjs />
+          <CertifiedLecturer />
         ) : active == 1 ? (
-          <Tpjs />
+          <DistinguishedLecturer />
         ) : active == 2 ? (
-          <Hzjs />
+          <CooperativeLecturer />
         ) : active == 3 ? (
-          <Jsfx />
+          <LecturerStyle />
         ) : (
           ''
         )}
@@ -95,3 +95,4 @@ export default function (props) {
     </div>
   );
 }
+export default Home;
