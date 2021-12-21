@@ -3,14 +3,14 @@
  * @Author: chengxinyu
  * @Date: 2021-12-19 14:56:11
  * @LastEditors: chengxinyu
- * @LastEditTime: 2021-12-21 09:52:04
+ * @LastEditTime: 2021-12-21 14:20:19
  */
 import React, { useEffect, useState } from 'react';
 
 function Choose(props) {
   // const [itemarr, setItemarr] = useState([]);
   // eslint-disable-next-line no-unused-vars
-  const { setIschose, setDate, choseTags, data, ischose } = props;
+  const { setIschose, setDate, choseTags, data, ischose, setTeachList } = props;
   console.log(77, setIschose, choseTags, data);
   const [newcho, setNewcho] = useState(data.tags);
   useEffect(() => {}, []);
@@ -30,6 +30,7 @@ function Choose(props) {
   };
 
   const onReset = (id) => {
+    setTeachList([]);
     exitAnimation();
     if (id == 0) {
       setDate({
@@ -41,6 +42,7 @@ function Choose(props) {
     }
   };
   const onDefine = () => {
+    setTeachList([]);
     exitAnimation();
     setDate({
       ...data,

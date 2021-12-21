@@ -3,7 +3,7 @@
  * @Author: chengxinyu
  * @Date: 2021-12-19 08:39:29
  * @LastEditors: chengxinyu
- * @LastEditTime: 2021-12-19 13:37:35
+ * @LastEditTime: 2021-12-21 10:22:32
  */
 
 import React, { useState, useEffect } from 'react';
@@ -18,7 +18,7 @@ function ShowLoading(props) {
   useEffect(() => {}, []);
 
   return (
-    <div>
+    <div id="showLoading">
       {props.showLoading ? (
         <div className="loading-info">
           <p>加载更多...</p>
