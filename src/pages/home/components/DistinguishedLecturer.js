@@ -2,7 +2,7 @@
  * @Author: chengxinyu
  * @Date: 2021-12-18 16:34:06
  * @LastEditors: chengxinyu
- * @LastEditTime: 2021-12-20 16:56:30
+ * @LastEditTime: 2021-12-21 09:37:42
  */
 import React, { useState, useEffect } from 'react';
 // import ReactDOM from 'react-dom';
@@ -11,8 +11,8 @@ import React, { useState, useEffect } from 'react';
 import TeacherItem from './TeacherItem';
 import Loading from '@/components/Loading';
 import ShowLoading from '@/components/showLoading';
-import Choose from './Choose';
-import ModalContainer from '@/components/ModalContainer';
+// import Choose from './Choose';
+// import ModalContainer from '@/components/ModalContainer';
 import ReactPullLoad, { STATS } from 'react-pullload'; //加载更多
 
 import axios from 'axios';
@@ -20,10 +20,10 @@ function DistinguishedLecturer() {
   // const [state, setState] = useState();
   //  const [searchtxt, setSearchtxt] = useState(''); //搜索框内容
   const [teachList, setTeachList] = useState([]); //讲师数据
-  const [ischose, setIschose] = useState(false); //显示筛选条件
+  // const [ischose, setIschose] = useState(false); //显示筛选条件
   const [showLoading, setShowLoading] = useState(true);
   const [allNum, setAllNum] = useState(0);
-  const choseTags = ['新手', '店铺运营', '服饰服装', '数据运营'];
+  // const choseTags = ['新手', '店铺运营', '服饰服装', '数据运营'];
 
   const [action, setAction] = useState(STATS.init);
   const [data, setDate] = useState({
@@ -112,7 +112,7 @@ function DistinguishedLecturer() {
 
         <ShowLoading showLoading={showLoading} />
       </div>
-      {ischose ? (
+      {/* {ischose ? (
         <ModalContainer>
           <Choose
             ischose={ischose}
@@ -122,7 +122,7 @@ function DistinguishedLecturer() {
             data={data}
           />
         </ModalContainer>
-      ) : null}
+      ) : null} */}
     </>
   );
 }
