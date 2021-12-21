@@ -30,6 +30,7 @@ function Choose(props) {
   };
 
   const onReset = (id) => {
+    
     setTeachList([]);
     exitAnimation();
     if (id == 0) {
@@ -42,6 +43,7 @@ function Choose(props) {
     }
   };
   const onDefine = () => {
+    // console.log()
     setTeachList([]);
     exitAnimation();
     setDate({
